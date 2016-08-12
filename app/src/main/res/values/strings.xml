@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">MacysAssignment</string>
 
-    <string name="message">Press start button to scan SD card files.</string>
+    <string name="message">As per the instruction i worked on this assignment only for 90 mins please consider that 
+    \n\nPress start button to scan SD card files.</string>
     <string name="start">START</string>
     <string name="stop">STOP</string>
 </resources>
