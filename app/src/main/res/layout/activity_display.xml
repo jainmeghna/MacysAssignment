@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.macysassignment.DisplayActivity">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/message"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_msg"/>
+
+    <RelativeLayout
+        android:id="@+id/filename_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_below="@id/update">
+
+        <TextView
+            android:id="@+id/filenames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filenames" />
+
+
+        <TextView
+            android:id="@+id/filenamesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/filenames"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/averageFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filenamesList"
+            android:text="Avg File size" />
+
+
+        <TextView
+            android:id="@+id/avgFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/averageFileSize"
+            android:layout_below="@id/filenamesList"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="1024" />
+
+        <TextView
+            android:id="@+id/fileExtention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avgFileSize"
+            android:text="Most used file ext " />
+
+
+        <TextView
+            android:id="@+id/fileExtentionFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fileExtention"
+            android:layout_below="@id/avgFileSize"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:text="exe = 5 " />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filename_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@android:color/holo_red_dark"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/start"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@id/tv_start"
+            android:background="@android:color/holo_red_dark"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/stop"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
